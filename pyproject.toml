@@ -31,6 +31,8 @@ dependencies = [
     "trimesh",
     "viser",
     "pyliblzfse",  # Need for viser.extras import in viser==0.2.23 
+    "mujoco>=3.0.0",
+    "jaxopt",  # For MJCFRobot optimization examples
 ]
 
 [project.optional-dependencies]

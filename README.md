@@ -7,7 +7,8 @@
 
 Core features include:
 
-- Differentiable robot forward kinematics model from a URDF.
+- Differentiable robot forward kinematics model from URDF or MJCF files.
+- Support for both custom JAX implementation (URDF) and MuJoCo MJX (MJCF).
 - Automatic generation of robot collision primitives (e.g., capsules).
 - Differentiable collision bodies with numpy broadcasting logic.
 - Common cost implementations (e.g., end effector pose, self/world-collision, manipulability).
@@ -16,6 +17,20 @@ Core features include:
 - Cross-platform support (CPU, GPU, TPU).
 
 Please refer to the [documentation](https://chungmin99.github.io/pyroki/) for more details, features, and usage examples.
+
+## Robot Model Support
+
+PyRoki supports two types of robot models:
+
+- **URDF Robot**: Custom JAX implementation for URDF files (original PyRoki functionality)
+- **MJCF Robot**: MuJoCo MJX-powered implementation for MJCF files (new!)
+
+For MJCF support, install MuJoCo:
+```bash
+pip install mujoco>=3.0.0
+```
+
+See [docs/mjcf_robot.md](docs/mjcf_robot.md) for detailed MJCF usage examples.
 
 ---
 
