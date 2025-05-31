@@ -2,6 +2,7 @@
 *.swo
 *.pyc
 *.egg-info
+*.npz
 *.ipynb_checkpoints
 __pycache__
 .coverage
